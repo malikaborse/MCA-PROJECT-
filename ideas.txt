@@ -1,1 +1,17 @@
 try to share your ideas here about this project let me know and correct my self according to it
+
+to Start the Frontend -
+1. If you reopen the vs code then you have to run the commands-
+    1) cd client_side
+    2) npm run dev
+
+2. If you are already in the Vs code and want to run 
+    1) npm run dev
+
+to Start the Backend -
+1. If you reopen the vs code then you have to run the commands-
+    1) cd server_side
+    2) npm run dev
+
+2. If you are already in the Vs code and want to run 
+    1) npm run dev
