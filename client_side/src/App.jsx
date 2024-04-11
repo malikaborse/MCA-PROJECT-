@@ -1,16 +1,16 @@
-
 import './App.css'
+import Header from './components/Header/Header'
+import Home from './components/Home/Home'
 
 function App() {
  
 
   return (
     <>
-      
-      <div>
-        <h1>INTERIOR DESIGN </h1>
-      </div>
-      
+    <header>
+      <Header/>
+    </header>
+      <Home/>
     </>
   )
 }

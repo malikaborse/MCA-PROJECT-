@@ -2,9 +2,10 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>
-        Header Section of Website
-    </div>
+    <>
+        <h1 className='fixed top-0 left-0 right-0 text-orange-500'> Header of Website</h1>
+    
+    </>
   )
 }
 
