@@ -7,6 +7,7 @@ function Header() {
         <>
             <div className='fixed top-0 left-0 right-0 bg-orange-500 shadow-lg z-50 justify-between items-center'>
                 <h1 className='text-white text-lg'> - Header - </h1>
+                <Button> Click me </Button>
             </div>
         </>
     )
