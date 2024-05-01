@@ -11,7 +11,7 @@ const FooterS = () => {
                     <div className='my-5'>
                         <Link to='/' className='font-bold text-5xl md:text-8xl text-center ' style={{ fontVariant: 'unicase' }}>
                             <div className='px-2 py-1 bg-gradient-to-r from-orange-500 via-sky-500 to-emerald-500 rounded-lg text-transparent bg-clip-text'>
-                                Food Space
+                                Greenskape
                             </div>
                         </Link>
                     </div>
