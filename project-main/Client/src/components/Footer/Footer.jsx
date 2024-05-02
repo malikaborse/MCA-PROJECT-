@@ -25,7 +25,7 @@ const FooterS = () => {
                         <div>
                             <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Contact Us' />
                             <Footer.LinkGroup col>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Email: info@foodspace.com</Footer.Link>
+                                <Footer.Link className='hover:text-gray-300' href='#'>Email: info@greenskape.com</Footer.Link>
                                 <Footer.Link className='hover:text-gray-300' href='#'>Phone: +91-0000000000</Footer.Link>
                                 <Footer.Link className='hover:text-gray-300' href='#'>abc Building, Xyz</Footer.Link>
                             </Footer.LinkGroup>
@@ -49,14 +49,7 @@ const FooterS = () => {
                             <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Blog' />
                             <Footer.LinkGroup col>
                                 <Footer.Link className='hover:text-gray-300' href='#'>Latest Articles</Footer.Link>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Recipes</Footer.Link>
-                            </Footer.LinkGroup>
-                        </div>
-                        <div>
-                            <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Careers' />
-                            <Footer.LinkGroup col>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Job Opportunities</Footer.Link>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Internships</Footer.Link>
+                                <Footer.Link className='hover:text-gray-300' href='#'>New Designs</Footer.Link>
                             </Footer.LinkGroup>
                         </div>
                         <div>
@@ -80,8 +73,6 @@ const FooterS = () => {
                         <Footer.Icon className='hover:text-gray-300' href='#' icon={BsFacebook} />
                         <Footer.Icon className='hover:text-gray-300' href='#' icon={BsInstagram} />
                         <Footer.Icon className='hover:text-gray-300' href='#' icon={BsTwitter} />
-                        <Footer.Icon className='hover:text-gray-300' href='https://github.com/sahandghavidel' icon={BsGithub} />
-                        <Footer.Icon className='hover:text-gray-300' href='#' icon={BsDribbble} />
                     </div>
                 </div>
             </div>
