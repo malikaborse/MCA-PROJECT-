@@ -77,7 +77,7 @@ const FooterS = () => {
                 <Footer.Divider />
                 <div className='w-full sm:flex sm:items-center sm:justify-between'>
                     <Footer.Copyright
-                        className='hover:text-pink-300'
+                        className='hover:text-white'
                         href='#'
                         by="komalika borse"
                         year={new Date().getFullYear()}
