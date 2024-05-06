@@ -7,15 +7,19 @@ const FooterS = () => {
     return (
         <Footer container className='border border-t-8 border-blue-300 bg-gray-800'>
             <div className='w-full mx-auto text-white'>
+                <div className='my-3'>
                 <div className='grid w-full justify-between items-center sm:flex md:grid-cols-1'>
-                    <div className='my-5'>
                         <Link to='/' className='font-bold text-5xl md:text-8xl text-center ' style={{ fontVariant: 'unicase' }}>
-                            <div className='px-5 py-1 bg-gradient-to-r from-orange-500 via-sky-500 to-emerald-500 rounded-lg text-transparent bg-clip-text 'style={{ fontSize: '40px' }}>
+                            <div className='px-5 py-1 rounded-lg text-blue-500'style={{ fontSize: '40px' }}>
                                 Greenskape
                             </div>
                         </Link>
                     </div>
-                    <div className='grid grid-cols-2 gap-8 mt-4 sm:grid-cols-4 sm:gap-6'>
+                </div>
+                
+                <div className='grid w-full justify-between items-center sm:flex md:grid-cols-1'>
+                    
+                    <div className='grid grid-cols-3 gap-2 mt-4 sm:grid-cols-4 sm:gap-2'>
                         {/*About*/}
                         <div>
                             <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='About' />
@@ -41,6 +45,22 @@ const FooterS = () => {
                                 <Footer.Link className='hover:text-gray-300' href='#'>Instagram</Footer.Link>
                             </Footer.LinkGroup>
                         </div>
+                        {/*Services*/}
+                        <div>
+                            <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Services' />
+                            <Footer.LinkGroup col>
+                                <Footer.Link className='hover:text-gray-300' href='#'>Privacy Policy</Footer.Link>
+                                <Footer.Link className='hover:text-gray-300' href='#'>Terms &amp; Conditions</Footer.Link>
+                            </Footer.LinkGroup>
+                        </div> 
+                        {/*Blog*/}
+                        <div>
+                            <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Blog' />
+                            <Footer.LinkGroup col>
+                                <Footer.Link className='hover:text-gray-300' href='#'>Latest Articles</Footer.Link>
+                                <Footer.Link className='hover:text-gray-300' href='#'>New Designs</Footer.Link>
+                            </Footer.LinkGroup>
+                        </div>
                         {/*FAQs*/}
                         <div>
                             <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='FAQs' />
@@ -49,23 +69,9 @@ const FooterS = () => {
                                 <Footer.Link className='hover:text-gray-300' href='#'>Help Center</Footer.Link>
                             </Footer.LinkGroup>
                         </div>
-                      {/*Blog*/}
-                        <div>
-                            <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Blog' />
-                            <Footer.LinkGroup col>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Latest Articles</Footer.Link>
-                                <Footer.Link className='hover:text-gray-300' href='#'>New Designs</Footer.Link>
-                            </Footer.LinkGroup>
-                        </div>
+                     
 
-                        {/*Services*/}
-                        <div>
-                            <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Services' />
-                            <Footer.LinkGroup col>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Privacy Policy</Footer.Link>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Terms &amp; Conditions</Footer.Link>
-                            </Footer.LinkGroup>
-                        </div>
+                        
                     </div>
                 </div>
                 <Footer.Divider />
