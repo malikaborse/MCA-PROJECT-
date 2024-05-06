@@ -14,9 +14,9 @@ const Banner = () => {
                 </h3>
                 <Link to="#">
                     <button
-                        className="self-center hover:bg-gradient-to-r from-pink-500 to-indigo-500 hover:text-white sm:w-[20vw] w-[35vw] rounded-md md:text-black h-9 border-2 text-white border-indigo-600 lg:w-[12vw]"
+                        className="self-center hover:bg-gradient-to-r from-pink-500 to-indigo-500 hover:text-white sm:w-[20vw] w-[35vw] rounded-md md:text-black h-9 border-2 text-white border-teal-600 lg:w-[12vw]"
                         variant="outlined"
-                        sx={{
+                        style={{
                             borderWidth: '2px',
                             borderColor: 'white',
                             whiteSpace: 'nowrap'
