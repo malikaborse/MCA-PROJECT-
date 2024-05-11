@@ -2,19 +2,19 @@ import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
-import menu_1 from './menu_1.png'
-import menu_2 from './menu_2.png'
-import menu_3 from './menu_3.png'
+import sofa from './sofa.png'
+import table from './table.png'
+import menu_3 from './chair.png'
 import menu_4 from './menu_4.png'
 import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
-import food_1 from './food_1.png'
-import food_2 from './food_2.png'
-import food_3 from './food_3.png'
-import food_4 from './food_4.png'
-import food_5 from './food_5.png'
+import food_1 from './sofa-s.png'
+import food_2 from './sofa_s2.png'
+import food_3 from './sofa_4.jpg'
+import food_4 from './sofa_5.jpg'
+import food_5 from './table_1.png'
 import food_6 from './food_6.png'
 import food_7 from './food_7.png'
 import food_8 from './food_8.png'
@@ -83,23 +83,23 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
-        menu_image: menu_1
+        menu_name: "Sofa",
+        menu_image: sofa
     },
     {
-        menu_name: "Rolls",
-        menu_image: menu_2
+        menu_name: "Table",
+        menu_image: table
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Chair",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Lamp",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "",
         menu_image: menu_5
     },
     {
@@ -118,34 +118,34 @@ export const menu_list = [
 export const food_list = [
     {
         _id: "1",
-        name: "Greek salad",
+        name: "soft cution",
         image: food_1,
-        price: 840,
-        description: "A refreshing Greek salad featuring crisp lettuce, juicy tomatoes, tangy olives, creamy feta cheese, and a zesty vinaigrette dressing.",
-        category: "Salad"
+        price: 15000,
+        description: "__",
+        category: "sofa"
     },
     {
         _id: "2",
-        name: "Veg salad",
+        name: "Leving room sofa",
         image: food_2,
-        price: 1260,
-        description: "A delightful veg salad packed with fresh cucumbers, crunchy carrots, vibrant bell peppers, and crisp lettuce, tossed in a light and flavorful dressing.",
-        category: "Salad"
+        price: 18600,
+        description: "__",
+        category: ""
     },
     {
         _id: "3",
         name: "Clover Salad",
         image: food_3,
-        price: 1120,
-        description: "A unique clover salad featuring a blend of nutritious greens, earthy roasted beets, creamy goat cheese, and a balsamic glaze for a touch of sweetness.",
+        price: 9700,
+        description: "__",
         category: "Salad"
     },
     {
         _id: "4",
-        name: "Chicken Salad",
+        name: "Adjustebele sofa",
         image: food_4,
-        price: 1680,
-        description: "Savor the flavors of tender grilled chicken breast, crisp lettuce, ripe cherry tomatoes, crunchy cucumbers, and a tangy honey mustard dressing in this delightful chicken salad.",
+        price: 16800,
+        description: "__",
         category: "Salad"
     },
     {
@@ -153,7 +153,7 @@ export const food_list = [
         name: "Lasagna Rolls",
         image: food_5,
         price: 980,
-        description: "Indulge in these savory lasagna rolls filled with a rich and flavorful mixture of seasoned ground beef, creamy ricotta cheese, and tangy marinara sauce, baked to perfection.",
+        description: "__",
         category: "Rolls"
     },
     {
