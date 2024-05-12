@@ -4,12 +4,13 @@ import header_img from './header_img.png'
 import search_icon from './search_icon.png'
 import sofa from './sofa.png'
 import table from './table.png'
-import menu_3 from './chair.png'
-import menu_4 from './lamp.png'
-import menu_5 from './console.png'
-import menu_6 from './dining_table.png'
-import menu_7 from './menu_7.png'
-import menu_8 from './menu_8.png'
+import chair from './chair.png'
+import lamp from './lamp.png'
+import consol_table from './console.png'
+import dining_table from './dining_table.png'
+import sl from './sl.png'
+import besin from './besin.png'
+import menu_9 from './besin.png'
 
 import food_1 from './sofa_2.png'
 import food_2 from './sofa_3.png'
@@ -93,27 +94,32 @@ export const menu_list = [
     },
     {
         menu_name: "Chair",
-        menu_image: menu_3
+        menu_image: chair
     },
     {
         menu_name: "Lamp",
-        menu_image: menu_4
+        menu_image: lamp
     },
     {
         menu_name: "Consol table",
-        menu_image: menu_5
+        menu_image: consol_table
     },
     {
         menu_name: "Dining table",
-        menu_image: menu_6
+        menu_image: dining_table
     },
     {
-        menu_name: "siling lamp",
-        menu_image: menu_7
+        menu_name: "Siling lamp",
+        menu_image: sl
+    },
+    
+    {
+        menu_name: "Washbasin",
+        menu_image: besin
     },
     {
-        menu_name: "",
-        menu_image: menu_8
+        menu_name: "__",
+        menu_image: menu_9
     }]
 
 export const food_list = [
@@ -135,7 +141,7 @@ export const food_list = [
     },
     {
         _id: "3",
-        name: "Clover Salad",
+        name: " For Office  ",
         image: food_3,
         price: 9700,
         description: "__",
@@ -151,7 +157,7 @@ export const food_list = [
     },
     {
         _id: "5",
-        name: "Lasagna Rolls",
+        name: "For Bedroom",
         image: food_5,
         price: 980,
         description: "__",
