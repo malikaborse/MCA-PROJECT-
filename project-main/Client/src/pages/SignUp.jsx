@@ -1,26 +1,43 @@
 import { Alert, Button, Label, Spinner, TextInput, ToggleSwitch } from 'flowbite-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import OAuth from '../components/OAuth';
 
 const SignUp = () => {
-    const [formData, setFormData] = useState({
-        isseller: false, // Initialize isseller to false
-    });
-
-    const [isseller, setIsSeller] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+    const [formData, setFormData] = useState({});
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
     };
 
-    const handleToggle = () => {
-        setFormData({ ...formData, isseller: !formData.isseller });
-    };
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(formData);
+        if (!formData.username || !formData.email || !formData.password || !formData.name) {
+            return setErrorMessage('Please fill out all fields..');
+        }
+        try {
+            setErrorMessage(null);
+            const res = await fetch('/api/user/signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+            if (data.success === false) {
+                return setErrorMessage(data.message);
+            }
+            if (res.ok) {
+                navigate('/signin');
+                setTimeout(() => {
+                    setErrorMessage('');
+                }, 3000);
+            }
+        } catch (error) {
+            setErrorMessage(error.message);
+        }
     };
 
     return (
@@ -76,14 +93,8 @@ const SignUp = () => {
                             className='mt-2'
                         />
                     </div>
-                    <ToggleSwitch
-                        checked={formData.isseller}
-                        label="Toggle to Register as a Seller"
-                        onChange={handleToggle}
-                        className='my-2'
-                    />
                     <Button gradientDuoTone="purpleToPink" outline onClick={handleSubmit}>
-                        Sign In
+                        Sign Up
                     </Button>
                 </form>
                 <div className='flex gap-2 text-sm font-mono font-semibold mt-5 justify-center'>
@@ -92,6 +103,11 @@ const SignUp = () => {
                         Sign In
                     </Link>
                 </div>
+                {errorMessage && (
+                    <Alert className='mt-5 self-center' severity="error">
+                        {errorMessage}
+                    </Alert>)
+                }
             </div>
         </div>
     );
