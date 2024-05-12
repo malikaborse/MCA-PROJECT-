@@ -1,15 +1,15 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from "./components/Header/Header"
+import Header from "./pages/Header"
 import Home from "./pages/Home"
 import Cart from './components/Cart/Cart'
 import Menu from "./components/Menu/Menu"
-import Search from "./components/Search/Search"
 import SignIn from './pages/SignIn'
 import SignUp from "./pages/SignUp"
-import FooterS from './components/Footer/Footer'
+import FooterS from './pages/Footer'
 import ForgetPassword from './pages/ForgetPassword'
-import PlaceOrder from './components/PlaceOrder/PlaceOrder'
+import PlaceOrder from './pages/PlaceOrder'
+import MyOrders from "./pages/MyOrders"
 
 // import PrivateRoute from "./components/PrivateRoute"
 
@@ -26,9 +26,9 @@ const App = () => {
           <Route path="/reset" element={<ForgetPassword />} />
           {/* <Route element={<PrivateRoute />}> */}
           <Route path="/cart" element={<Cart />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/interiors" element={<Menu />} />
           <Route path="/placeorder" element={<PlaceOrder />} />
+          <Route path="/myorders" element={<MyOrders />} />
           {/* <Route path="/myposts" element={<MyPosts />} />
             <Route path="/search" element={<Search />} />
           {/* </Route> */}

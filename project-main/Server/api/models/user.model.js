@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const { Schema } = mongoose;
+const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     username: {
@@ -33,9 +33,10 @@ const userSchema = new Schema({
         type: Boolean,
         default: false
     },
-    sellingItems: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Item'
+    orders: [{
+        type: mongoose.Types.ObjectId,
+        ref: 'Order',
+        required: true
     }]
 }, { timestamps: true });
 

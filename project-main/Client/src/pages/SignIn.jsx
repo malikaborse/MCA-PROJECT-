@@ -4,35 +4,39 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
     const [formData, setFormData] = useState({});
+    const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
+    const { login } = useContext(StoreContext);
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
     };
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     if (!formData.email || !formData.password) {
-    //         return dispatch(signInFailure('Please fill all the fields'));
-    //     }
-    //     try {
-    //         dispatch(signInStart());
-    //         const res = await fetch('/api/auth/signin', {
-    //             method: 'POST',
-    //             headers: { 'Content-Type': 'application/json' },
-    //             body: JSON.stringify(formData),
-    //         });
-    //         const data = await res.json();
-    //         if (data.success === false) {
-    //             dispatch(signInFailure(data.message));
-    //         }
-
-    //         if (res.ok) {
-    //             dispatch(signInSuccess(data));
-    //             navigate('/');
-    //         }
-    //     } catch (error) {
-    //         dispatch(signInFailure(error.message));
-    //     }
-    // };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!formData.username || !formData.password) {
+            return setErrorMessage('Please fill all the fields');
+        }
+        try {
+            setErrorMessage(null);
+            const res = await fetch('/api/user/signin', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+            if (data.success === false) {
+                return setErrorMessage("Check Credentitals");
+            }
+            if (res.ok) {
+                login(data);
+                navigate('/menu');
+                setTimeout(() => {
+                    setErrorMessage('');
+                }, 3000);
+            }
+        } catch (error) {
+            setErrorMessage(error.message);
+        }
+    };
     return (
         <div className='min-h-screen mt-10 flex items-center justify-center md:mx-8 md:flex-row flex-col md:gap-10 gap-3'>
             <div className='md:w-[40%] text-center hidden md:block'>
@@ -66,7 +70,7 @@ const SignIn = () => {
                             className='mt-2'
                         />
                     </div>
-                    <Button gradientDuoTone="purpleToPink" outline>
+                    <Button gradientDuoTone="purpleToPink" outline onClick={handleSubmit}>
                         Sign In
                     </Button>
                 </form>
@@ -82,6 +86,11 @@ const SignIn = () => {
                         Reset
                     </Link>
                 </div>
+                {errorMessage && (
+                    <Alert className="mt-4" color="red">
+                        {errorMessage}
+                    </Alert>
+                )}
             </div>
         </div>
     );
