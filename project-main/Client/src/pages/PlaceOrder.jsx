@@ -5,21 +5,44 @@ import { StoreContext } from '../context/StoreContext';
 
 const PlaceOrder = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
+    const [errorMessage, setErrorMessage] = useState('');
     const [formData, setFormData] = useState({});
-    const { getTotalCartAmount } = useContext(StoreContext);
+    const { getTotalCartAmount, user } = useContext(StoreContext);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formData);
-    };
-
     const handleDropdownItemClick = (category) => {
         setSelectedCategory(category);
         setFormData({ ...formData, category: category });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!formData.name || !formData.email || !formData.plot_no || !formData.street || !formData.city || !formData.pincode || !formData.phone || !formData.payment) {
+            return setErrorMessage('Please fill all the fields');
+        }
+        try {
+            setErrorMessage(null);
+            const res = await fetch('/api/delivery/adddelivery', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...formData, userId: user._id }),
+            });
+            const data = await res.json();
+            if (data.success === false) {
+                return setErrorMessage("Check Credentitals");
+            }
+            if (res.ok) {
+                navigate('/myorders');
+                setTimeout(() => {
+                    setErrorMessage('');
+                }, 3000);
+            }
+        } catch (error) {
+            setErrorMessage(error.message);
+        }
     };
 
     return (
@@ -138,6 +161,11 @@ const PlaceOrder = () => {
                                 </div>
                             </Dropdown>
                         </div>
+                        {errorMessage && (
+                            <Alert className="mt-4" color="red">
+                                {errorMessage}
+                            </Alert>
+                        )}
                     </form>
                 </div>
                 <div className='md:w-[30%] w-[80%] mb-10'>
@@ -164,7 +192,7 @@ const PlaceOrder = () => {
                     </div>
                     <div style={{ textAlign: "-webkit-center" }}>
                         <Link to='/placeorder'>
-                            <Button gradientDuoTone="purpleToPink" outline className='mt-6'>
+                            <Button gradientDuoTone="purpleToPink" outline className='mt-6' onClick={handleSubmit}>
                                 Proceed to Checkout
                             </Button>
                         </Link>
