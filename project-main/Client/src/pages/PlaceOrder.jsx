@@ -1,14 +1,14 @@
 import React, { useContext, useState } from 'react'
-import { Button, Dropdown, DropdownDivider, Label, TextInput } from 'flowbite-react';
-import { Link } from 'react-router-dom';
+import { Button, Dropdown, DropdownDivider, Label, TextInput, Alert } from 'flowbite-react';
+import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../context/StoreContext';
 
 const PlaceOrder = () => {
-    const [selectedCategory, setSelectedCategory] = useState(null);
-    const [errorMessage, setErrorMessage] = useState('');
     const [formData, setFormData] = useState({});
-    const { getTotalCartAmount, user } = useContext(StoreContext);
-
+    const { getTotalCartAmount, cartItems, emptyCart, food_list, user } = useContext(StoreContext);
+    const [selectedCategory, setSelectedCategory] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+    const navigate = useNavigate();
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
     };
@@ -20,26 +20,48 @@ const PlaceOrder = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!formData.name || !formData.email || !formData.plot_no || !formData.street || !formData.city || !formData.pincode || !formData.phone || !formData.payment) {
+        console.log(formData)
+        if (!formData.name || !formData.email || !formData.plot_no || !formData.street || !formData.city || !formData.pincode || !formData.phone || !formData.category) {
             return setErrorMessage('Please fill all the fields');
         }
         try {
-            setErrorMessage(null);
-            const res = await fetch('/api/delivery/adddelivery', {
+            const orderDetails = food_list
+                .filter(item => cartItems[item._id] > 0)
+                .map(item => ({
+                    _id: item._id,
+                    image: item.image,
+                    name: item.name,
+                    price: item.price,
+                    quantity: cartItems[item._id],
+                    total: item.price * cartItems[item._id],
+                    seller: item.seller,
+                    user: user._id
+                }));
+
+            const resOrder = await fetch('/api/order/addtocart', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(orderDetails),
+            });
+
+            if (!resOrder.ok) {
+                throw new Error('Failed to add Orders');
+            } else {
+                console.log("Purchasing done")
+            }
+
+            const resDelivery = await fetch('/api/delivery/adddelivery', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ ...formData, userId: user._id }),
             });
-            const data = await res.json();
-            if (data.success === false) {
-                return setErrorMessage("Check Credentitals");
+
+            if (!resDelivery.ok) {
+                throw new Error('Failed to add Delivery Information');
             }
-            if (res.ok) {
-                navigate('/myorders');
-                setTimeout(() => {
-                    setErrorMessage('');
-                }, 3000);
-            }
+
+            emptyCart();
+            navigate('/myorders');
         } catch (error) {
             setErrorMessage(error.message);
         }
@@ -137,9 +159,8 @@ const PlaceOrder = () => {
                                 <TextInput
                                     type='text'
                                     placeholder='Select Payment Method'
-                                    value={selectedCategory || ''}
+                                    defaultValue={selectedCategory || ''}
                                     id='payment'
-                                    onChange={handleChange}
                                     className='mt-2 cursor-pointer md:w-[28vw] w-[85vw]'
                                     readOnly
                                 />

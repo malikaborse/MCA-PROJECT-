@@ -3,7 +3,6 @@ import User from "../models/user.model.js";
 
 export const addToCart = async (req, res, next) => {
     const orders = req.body;
-    // console.log(orders);
     try {
         for (const orderData of orders) {
             const { image, name, price, quantity, total, user } = orderData;
@@ -22,7 +21,7 @@ export const addToCart = async (req, res, next) => {
     }
 };
 
-exports.getOrders = async (req, res, next) => {
+export const getOrders = async (req, res, next) => {
     try {
         const orders = await Order.find({});
         res.status(200).json({ success: true, orders });

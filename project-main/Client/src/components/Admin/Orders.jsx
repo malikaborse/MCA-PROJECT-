@@ -1,15 +1,15 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { StoreContext } from '../context/StoreContext';
-import { food_list } from '../assets/assets';
+import React, { useContext, useEffect, useState } from 'react';
+import { StoreContext } from '../../context/StoreContext';
+import { Dropdown, DropdownDivider } from 'flowbite-react';
 
-const MyOrders = () => {
+const Orders = () => {
     const { user } = useContext(StoreContext);
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const res = await fetch('/api/order/getuserorder', {
+                const res = await fetch('/api/order/getorder', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ user: user._id }),
@@ -28,6 +28,29 @@ const MyOrders = () => {
         fetchOrders();
     }, []);
 
+    const handleStatusChange = async (orderId, newStatus) => {
+        try {
+            const res = await fetch(`/api/order/updatestatus/${user._id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ orderId, status: newStatus }),
+            });
+            if (res.ok) {
+                const updatedOrders = orders.map((order) => {
+                    if (order._id === orderId) {
+                        return { ...order, status: newStatus };
+                    }
+                    return order;
+                });
+                setOrders(updatedOrders);
+            } else {
+                console.error('Failed to update order status');
+            }
+        } catch (error) {
+            console.error('Error updating order status:', error);
+        }
+    };
+
     const getStatusColor = (status) => {
         switch (status) {
             case 'pending':
@@ -44,7 +67,7 @@ const MyOrders = () => {
     };
 
     return (
-        <div className='min-h-screen mt-5 md:mt-[4.5rem]'>
+        <div className='min-h-screen mt-5 md:mt-16'>
             <div>
                 <div className='flex flex-row justify-evenly text-center mx-1 md:mx-20'>
                     <p className="w-full md:w-1/6 tracking-widest md:text-lg text-xs font-medium text-gray-600 mt-2">Item</p>
@@ -66,16 +89,29 @@ const MyOrders = () => {
                                 <p className="w-full md:w-1/6 tracking-widest md:text-lg text-xs title-font font-medium text-gray-800 mb-1">₹{order.price}</p>
                                 <p className="w-full md:w-1/6 tracking-widest md:text-lg text-xs title-font font-medium text-gray-800 mb-1">{order.quantity}</p>
                                 <p className="w-full md:w-1/6 tracking-widest md:text-lg text-xs title-font font-medium text-gray-800 mb-1">₹{order.total}</p>
-                                <p className="w-full md:w-1/6 tracking-widest md:text-lg text-xs title-font font-medium text-red-800 mb-1" style={{ textAlign: '-webkit-center', color: getStatusColor(order.status) }}>{order.status}</p>
+                                <p className="w-full md:w-1/6 tracking-widest md:text-lg text-xs title-font font-medium mb-1" style={{ textAlign: '-webkit-center', color: getStatusColor(order.status) }}>
+                                    <Dropdown arrowIcon={false} inline label={order.status} as='div'>
+                                        {['accepted', 'rejected', 'dispatched', 'delivered'].map((status) => (
+                                            <React.Fragment key={status}>
+                                                <Dropdown.Item
+                                                    key={status} // Assign a unique key for each Dropdown.Item
+                                                    onClick={() => handleStatusChange(order._id, status)}
+                                                >
+                                                    {status}
+                                                </Dropdown.Item>
+                                                <DropdownDivider key={`divider-${status}`} />
+                                            </React.Fragment>
+                                        ))}
+                                    </Dropdown>
+                                </p>
                             </div>
                             <hr className="w-full my-3 border-2" />
                         </React.Fragment>
                     );
-                }
-                )}
+                })}
             </div>
         </div>
     );
 };
 
-export default MyOrders
+export default Orders;

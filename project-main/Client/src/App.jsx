@@ -10,6 +10,8 @@ import FooterS from './pages/Footer'
 import ForgetPassword from './pages/ForgetPassword'
 import PlaceOrder from './pages/PlaceOrder'
 import MyOrders from "./pages/MyOrders"
+import Items from "./components/Admin/Items"
+import Orders from "./components/Admin/Orders"
 
 // import PrivateRoute from "./components/PrivateRoute"
 
@@ -26,9 +28,11 @@ const App = () => {
           <Route path="/reset" element={<ForgetPassword />} />
           {/* <Route element={<PrivateRoute />}> */}
           <Route path="/cart" element={<Cart />} />
+          <Route path="/items" element={<Items />} />
           <Route path="/interiors" element={<Menu />} />
           <Route path="/placeorder" element={<PlaceOrder />} />
           <Route path="/myorders" element={<MyOrders />} />
+          <Route path="/orders" element={<Orders />} />
           {/* <Route path="/myposts" element={<MyPosts />} />
             <Route path="/search" element={<Search />} />
           {/* </Route> */}

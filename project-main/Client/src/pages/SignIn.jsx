@@ -1,42 +1,41 @@
-import { Alert, Button, Label, Spinner, TextInput } from 'flowbite-react';
-import { useState } from 'react';
+import { Alert, Button, Label, TextInput } from 'flowbite-react';
+import { useContext, useState } from 'react';
+import { StoreContext } from '../context/StoreContext';
 import { Link, useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
-    const [formData, setFormData] = useState({});
+    const [formData, setFormData] = useState({ username: '', password: '' });
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
     const { login } = useContext(StoreContext);
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
     };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!formData.username || !formData.password) {
             return setErrorMessage('Please fill all the fields');
         }
         try {
-            setErrorMessage(null);
+            setErrorMessage('');
             const res = await fetch('/api/user/signin', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
             });
             const data = await res.json();
-            if (data.success === false) {
-                return setErrorMessage("Check Credentitals");
+            if (!res.ok) {
+                throw new Error(data.message || 'Failed to sign in');
             }
-            if (res.ok) {
-                login(data);
-                navigate('/menu');
-                setTimeout(() => {
-                    setErrorMessage('');
-                }, 3000);
-            }
+            login(data);
+            navigate('/interiors');
         } catch (error) {
             setErrorMessage(error.message);
         }
     };
+
     return (
         <div className='min-h-screen mt-10 flex items-center justify-center md:mx-8 md:flex-row flex-col md:gap-10 gap-3'>
             <div className='md:w-[40%] text-center hidden md:block'>
@@ -48,14 +47,15 @@ const SignIn = () => {
                 </h3>
             </div>
             <div className='md:w-[30%] w-[85%]'>
-                <form className='flex flex-col gap-4'>
+                <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
                     <span className='px-2 py-1 text-black rounded-lg inline-block font-bold text-5xl md:text-4xl text-center mb-5' style={{ fontVariant: 'petite-caps' }}>SignIn Page</span>
                     <div>
                         <Label value='Your email' />
                         <TextInput
-                            type='email'
-                            placeholder='name@company.com'
-                            id='email'
+                            type='text'
+                            placeholder='username'
+                            id='username'
+                            value={formData.username}
                             onChange={handleChange}
                             className='mt-2'
                         />
@@ -66,11 +66,12 @@ const SignIn = () => {
                             type='password'
                             placeholder='********'
                             id='password'
+                            value={formData.password}
                             onChange={handleChange}
                             className='mt-2'
                         />
                     </div>
-                    <Button gradientDuoTone="purpleToPink" outline onClick={handleSubmit}>
+                    <Button gradientDuoTone="purpleToPink" outline type="submit">
                         Sign In
                     </Button>
                 </form>
