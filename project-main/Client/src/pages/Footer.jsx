@@ -1,7 +1,7 @@
 import React from 'react'
 import { Footer } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-import { BsFacebook, BsInstagram, BsTwitter,BsGeoAlt, BsTelephone } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsGeoAlt, BsTelephone } from 'react-icons/bs';
 
 const FooterS = () => {
     return (
@@ -31,7 +31,7 @@ const FooterS = () => {
                         <div>
                             <Footer.Title className='text-gray-200 text-lg font-semibold' style={{ fontVariant: 'unicase' }} title='Contact Us' />
                             <Footer.LinkGroup col>
-                                <Footer.Link className='hover:text-gray-300' href='#'>Email: info@greenskape.com</Footer.Link>
+                                <Footer.Link className='hover:text-gray-300' href='#'>Email: kamolica30@gmail.com</Footer.Link>
                                 <Footer.Link className='hover:text-gray-300' href='#'>Phone: 9325030351</Footer.Link>
                                 <Footer.Link className='hover:text-gray-300' href='#'>3rd floor,Gajanan annex, near Magnum hospital,patil lane,nashik</Footer.Link>
                             </Footer.LinkGroup>
@@ -87,7 +87,7 @@ const FooterS = () => {
                         <Footer.Icon className='hover:text-gray-300' href='#' icon={BsGeoAlt} />
                         <Footer.Icon className='hover:text-gray-300' href='#' icon={BsFacebook} />
                         <Footer.Icon className='hover:text-gray-300' href='#' icon={BsInstagram} />
-                        <Footer.Icon className='hover:text-gray-300' href='#' icon={BsTwitter} />
+                     {/*   <Footer.Icon className='hover:text-gray-300' href='#' icon={BsTwitter} />  */}
                     </div>
                 </div>
             </div>

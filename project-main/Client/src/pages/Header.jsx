@@ -40,7 +40,7 @@ const Header = () => {
                     <span className='px-5 py-1 rounded-lg text-blue-500'>Greenskape</span>
                 </Link>
 
-                {user ? (user.isSeller ? (
+                {user ? (!user.isSeller ? (
                     <>
                         <div className='flex justify-between items-center sm:w-[59%] w-[57%]'>
                             <div className='flex items-center sm:gap-5 md:gap-12'>
