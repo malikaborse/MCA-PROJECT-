@@ -8,7 +8,7 @@ const Header = () => {
     const currentUser = true; // Change to true or false as needed
     const [headerValue, setHeaderValue] = useState(currentUser ? 'Menu' : 'Home');
     const [linkValue, setLinkValue] = useState(currentUser ? '/menu' : '/');
-    const [showSearchInput, setShowSearchInput] = useState(false);
+  {/*  const [showSearchInput, setShowSearchInput] = useState(false);*/}
     const { getTotalCartAmount } = useContext(StoreContext);
 
     const navigate = useNavigate();
