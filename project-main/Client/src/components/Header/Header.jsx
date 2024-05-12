@@ -24,7 +24,6 @@ const Header = () => {
         }
         navigate(link);
     };
-
     return (
         <div className='fixed top-0 left-0 right-0 bg-white shadow-lg z-50 items-center'>
             <Navbar className='border-b-2 h-16'>
@@ -35,14 +34,25 @@ const Header = () => {
                 {currentUser ? (
                     <>
                         <div className='flex sm:justify-between justify-end items-center w-[70%]'>
-                            <div className='flex items-center md:gap-8 md:pl-[2vw]'>
+                            <div className='flex items-center md:gap-20 md:pl-[2vw]'>
+                               <NavLink
+                                    to="/home"
+                                    className={({ isActive }) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-black" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent md:border-0 hover:text-teal-600 lg:p-0 font-semibold hidden sm:block`}
+                                >
+                                    Home
+                                </NavLink> 
+                                
                                 <NavLink
                                     to="/menu"
                                     className={({ isActive }) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-black" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent md:border-0 hover:text-teal-600 lg:p-0 font-semibold hidden sm:block`}
                                 >
-                                    Furniture
+                                    Interiors
                                 </NavLink>
-                                {showSearchInput && (
+
+
+                                
+                                
+                               {/* {showSearchInput && (
                                     <Link to='/search'>
                                         <TextInput
                                             type="text"
@@ -62,6 +72,7 @@ const Header = () => {
                                         style={{ height: "5.5vh", outline: "none" }}
                                     />
                                 </Link>
+                            */}
                                 <NavLink
                                     to="/cart"
                                     className={({ isActive }) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-black" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent md:border-0 hover:text-teal-600 lg:p-0 font-semibold hidden sm:block`}
