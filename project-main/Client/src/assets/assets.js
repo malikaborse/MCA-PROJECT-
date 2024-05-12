@@ -6,8 +6,8 @@ import sofa from './sofa.png'
 import table from './table.png'
 import menu_3 from './chair.png'
 import menu_4 from './lamp.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
+import menu_5 from './consol.png'
+import menu_6 from './dining_table.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 
@@ -100,19 +100,19 @@ export const menu_list = [
         menu_image: menu_4
     },
     {
-        menu_name: "",
+        menu_name: "Consol table",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Dining table",
         menu_image: menu_6
     },
     {
-        menu_name: "Pasta",
+        menu_name: "siling lamp",
         menu_image: menu_7
     },
     {
-        menu_name: "Noodles",
+        menu_name: "",
         menu_image: menu_8
     }]
 
