@@ -50,7 +50,7 @@ const SignIn = () => {
                 <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
                     <span className='px-2 py-1 text-black rounded-lg inline-block font-bold text-5xl md:text-4xl text-center mb-5' style={{ fontVariant: 'petite-caps' }}>SignIn Page</span>
                     <div>
-                        <Label value='Your email' />
+                        <Label value='Your Username' />
                         <TextInput
                             type='text'
                             placeholder='username'
