@@ -12,18 +12,18 @@ import sl from './sl.png'
 import besin from './besin.png'
 import menu_9 from './besin.png'
 
-import food_1 from './sofa_2.png'
-import food_2 from './sofa_3.png'
-import food_3 from './sofa_4.jpg'
-import food_4 from './sofa_5.jpg'
-import food_5 from './sofa_6.jpg'
-import food_6 from './table_1.png'
-import food_7 from './food_7.png'
-import food_8 from './food_8.png'
-import food_9 from './food_9.png'
-import food_10 from './food_10.png'
-import food_11 from './food_11.png'
-import food_12 from './food_12.png'
+import food_1 from './sofa_1.png'
+import food_2 from './sofa_2.png'
+import food_3 from './sofa_3.png'
+import food_4 from './sofa_4.jpg'
+import food_5 from './sofa_5.jpg'
+import food_6 from './sofa_6.jpg'
+import food_7 from './sofa_7.png'
+import food_8 from './sofa_8.png'
+import food_9 from './sofa_9.png'
+import food_10 from './sofa_10.png'
+import food_11 from './sofa_11.png'
+import food_12 from './sofa_12.png'
 import food_13 from './food_13.png'
 import food_14 from './food_14.png'
 import food_15 from './food_15.png'
@@ -159,13 +159,13 @@ export const food_list = [
         _id: "5",
         name: "For Bedroom",
         image: food_5,
-        price: 980,
+        price: 7000,
         description: "__",
         category: "Rolls"
     },
     {
         _id: "6",
-        name: "Peri Peri Rolls",
+        name: "Study Table",
         image: food_6,
         price: 840,
         description: "Enjoy the fiery flavors of peri peri chicken wrapped in soft rolls, complemented by crunchy lettuce, sliced tomatoes, and a drizzle of tangy peri peri sauce.",
@@ -173,7 +173,7 @@ export const food_list = [
     },
     {
         _id: "7",
-        name: "Chicken Rolls",
+        name: "kechan ",
         image: food_7,
         price: 1400,
         description: "Satisfy your hunger with these hearty chicken rolls stuffed with tender shredded chicken, aromatic spices, fresh vegetables, and a creamy garlic mayo sauce.",
