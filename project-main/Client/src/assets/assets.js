@@ -429,7 +429,7 @@ export const food_list = [
     _id: "33",
     name: "Lamp",
     image: food_33,
-    price: 1050,
+    price:7330,
     description: "__",
     category: " lamp"
 },
@@ -437,7 +437,7 @@ export const food_list = [
     _id: "34",
     name: "Lamp",
     image: food_34,
-    price: 1050,
+    price: 2200,
     description: "__",
     category: "lmap "
 },
@@ -445,7 +445,7 @@ export const food_list = [
     _id: "35",
     name: "Lamp",
     image: food_35,
-    price: 1050,
+    price: 8750,
     description: "__",
     category: " lamp"
 },
@@ -453,7 +453,7 @@ export const food_list = [
     _id: "36",
     name: "Lamp",
     image: food_36,
-    price: 1050,
+    price: 6600,
     description: "__",
     category: " lamp"
 },
@@ -461,7 +461,7 @@ export const food_list = [
     _id: "37",
     name: "Lamp",
     image: food_37,
-    price: 1050,
+    price: 9950,
     description: "__",
     category: " lamp"
 },
@@ -469,7 +469,7 @@ export const food_list = [
     _id: "38",
     name: "Lamp",
     image: food_38,
-    price: 1050,
+    price: 8050,
     description: "__",
     category: " lamp"
 },
@@ -477,7 +477,7 @@ export const food_list = [
     _id: "39",
     name: "Lamp",
     image: food_39,
-    price: 1050,
+    price: 7500,
     description: "__",
     category: "lamp "
 },
@@ -485,7 +485,7 @@ export const food_list = [
     _id: "40",
     name: "Lamp",
     image: food_40,
-    price: 1050,
+    price: 3822,
     description: "__",
     category: " lamp"
 },
@@ -493,7 +493,7 @@ export const food_list = [
     _id: "41",
     name: "Consol",
     image: food_41,
-    price: 1050,
+    price: 5666,
     description: "__",
     category: " consol"
 },
@@ -501,7 +501,7 @@ export const food_list = [
     _id: "42",
     name: "Consol",
     image: food_42,
-    price: 1050,
+    price: 9700,
     description: "__",
     category: "consol "
 },
@@ -509,7 +509,7 @@ export const food_list = [
     _id: "43",
     name: "Consol",
     image: food_43,
-    price: 1050,
+    price: 8777,
     description: "__",
     category: "consol "
 },
@@ -517,7 +517,7 @@ export const food_list = [
     _id: "44",
     name: "Consol",
     image: food_44,
-    price: 1050,
+    price: 5657,
     description: "__",
     category: "consol "
 },
@@ -525,7 +525,7 @@ export const food_list = [
     _id: "45",
     name: "Consol",
     image: food_45,
-    price: 1050,
+    price: 9950,
     description: "__",
     category: "consol "
 },
@@ -533,7 +533,7 @@ export const food_list = [
     _id: "46",
     name: "Consol",
     image: food_46,
-    price: 1050,
+    price: 6750,
     description: "__",
     category: "consol "
 },
@@ -541,7 +541,7 @@ export const food_list = [
     _id: "47",
     name: "Consol",
     image: food_47,
-    price: 1050,
+    price: 1750,
     description: "__",
     category: "consol "
 },
@@ -557,7 +557,7 @@ export const food_list = [
     _id: "49",
     name: "Besin",
     image: food_49,
-    price: 1050,
+    price: 5999,
     description: "__",
     category: "besin "
 },
@@ -565,7 +565,7 @@ export const food_list = [
     _id: "50",
     name: "Besin",
     image: food_50,
-    price: 1050,
+    price: 5900,
     description: "__",
     category: "besin "
 },
@@ -573,7 +573,7 @@ export const food_list = [
     _id: "51",
     name: "Besin",
     image: food_51,
-    price: 1050,
+    price: 10000,
     description: "__",
     category: "besin "
 },
@@ -581,7 +581,7 @@ export const food_list = [
     _id: "52",
     name: "Besin",
     image: food_52,
-    price: 1050,
+    price: 5400,
     description: "__",
     category: "besin "
 },
@@ -589,7 +589,7 @@ export const food_list = [
     _id: "53",
     name: "Besin",
     image: food_53,
-    price: 1050,
+    price: 6000,
     description: "__",
     category: "besin "
 },
@@ -597,7 +597,7 @@ export const food_list = [
     _id: "54",
     name: "Besin",
     image: food_54,
-    price: 1050,
+    price: 7000,
     description: "__",
     category: "besin "
 },
@@ -605,7 +605,7 @@ export const food_list = [
     _id: "55",
     name: "Besin",
     image: food_55,
-    price: 1050,
+    price: 1200,
     description: "__",
     category: "besin "
 },
@@ -613,7 +613,7 @@ export const food_list = [
     _id: "56",
     name: "Besin",
     image: food_56,
-    price: 1050,
+    price: 1660,
     description: "__",
     category: "besin "
 },
@@ -621,7 +621,7 @@ export const food_list = [
     _id: "57",
     name: "siling_lamp_",
     image: food_57,
-    price: 1050,
+    price: 9001,
     description: "__",
     category: "besin "
 },
@@ -629,7 +629,7 @@ export const food_list = [
     _id: "58",
     name: "Siling Lamp",
     image: food_58,
-    price: 1050,
+    price: 1500,
     description: "__",
     category: "siling lamp "
 },
@@ -645,7 +645,7 @@ export const food_list = [
     _id: "60",
     name: "Siling Lamp",
     image: food_60,
-    price: 1050,
+    price: 1000,
     description: "__",
     category: "siling lamp"
 },
@@ -653,7 +653,7 @@ export const food_list = [
     _id: "61",
     name: "Siling Lamp",
     image: food_61,
-    price: 1050,
+    price: 2666,
     description: "__",
     category: "siling lamp "
 },
@@ -661,7 +661,7 @@ export const food_list = [
     _id: "62",
     name: "Siling Lamp",
     image: food_62,
-    price: 1050,
+    price: 1600,
     description: "__",
     category: "siling lamp "
 },
@@ -669,7 +669,7 @@ export const food_list = [
     _id: "63",
     name: "Siling Lamp",
     image: food_63,
-    price: 1050,
+    price: 7200,
     description: "__",
     category: "siling lamp "
 },
@@ -677,7 +677,7 @@ export const food_list = [
     _id: "64",
     name: "Siling Lamp",
     image: food_64,
-    price: 1050,
+    price: 1500,
     description: "__",
     category: "siling lamp "
 },
@@ -685,7 +685,7 @@ export const food_list = [
     _id: "65",
     name: "Dining Table",
     image: food_65,
-    price: 1050,
+    price: 9300,
     description: "__",
     category: "dining table "
 },
@@ -701,7 +701,7 @@ export const food_list = [
     _id: "67",
     name: "Dining Table",
     image: food_67,
-    price: 1050,
+    price: 12300,
     description: "__",
     category: "dining table "
 },
@@ -709,7 +709,7 @@ export const food_list = [
     _id: "68",
     name: "Dining Table",
     image: food_68,
-    price: 1050,
+    price:7300,
     description: "__",
     category: "dining table "
 },
@@ -717,7 +717,7 @@ export const food_list = [
     _id: "69",
     name: "Dining Table",
     image: food_69,
-    price: 1050,
+    price: 4050,
     description: "__",
     category: "dining table "
 },
@@ -725,7 +725,7 @@ export const food_list = [
     _id: "70",
     name: "Dining Table",
     image: food_70,
-    price: 1050,
+    price: 7800,
     description: "__",
     category: "dining table "
 },
@@ -733,7 +733,7 @@ export const food_list = [
     _id: "71",
     name: "Dining Table",
     image: food_71,
-    price: 1050,
+    price: 5000,
     description: "__",
     category: "dining table "
 },
