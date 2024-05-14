@@ -7,10 +7,9 @@ import table from './table.png'
 import chair from './chair.png'
 import lamp from './lamp.png'
 import consol_table from './console.png'
-import dining_table from './dining_table.png'
-import sl from './sl.png'
 import besin from './besin.png'
-import menu_9 from './besin.png'
+import sl from './sl.png'
+import dining_table from './dining_table.png'
 //sofa img
 import food_1 from './sofa_1.png'
 import food_2 from './sofa_2.png'
@@ -56,11 +55,42 @@ import food_38 from './lamp_7.png'
 import food_39 from './lamp_8.png'
 import food_40 from './lamp_1.png'
 //consol
-import food_41 from './chair8.png'
-import food_42 from './chair8.png'
-import food_43 from './chair8.png'
+import food_41 from './cl1.jpg'
+import food_42 from './cl2.jpg'
+import food_43 from './cl3.jpg'
+import food_44 from './cl4.jpg'
+import food_45 from './cl5.jpg'
+import food_46 from './cl6.jpg'
+import food_47 from './cl9.jpg'
+import food_48 from './cl8.jpg'
+// besin img
+import food_49 from './b1.jpg'
+import food_50 from './b2.jpg'
+import food_51 from './b3.jpg'
+import food_52 from './b4.jpg'
+import food_53 from './b5.jpg'
+import food_54 from './b6.jpg'
+import food_55 from './b7.jpg'
+import food_56 from './b8.jpg'
+//siling lamp
+import food_57 from './sl9.png'
+import food_58 from './sl2.png'
+import food_59 from './sl3.png'
+import food_60 from './sl4.png'
+import food_61 from './sl5.png'
+import food_62 from './sl6.png'
+import food_63 from './sl7.png'
+import food_64 from './sl8.png'
 
-
+// dining table
+import food_65 from './d1.png'
+import food_66 from './d2.png'
+import food_67 from './d3.png'
+import food_68 from './d4.png'
+import food_69 from './d5.png'
+import food_70 from './d6.png'
+import food_71 from './d7.png'
+import food_72 from './d8.png'
 
 
 
@@ -124,22 +154,18 @@ export const menu_list = [
         menu_image: consol_table
     },
     {
-        menu_name: "Dining table",
-        menu_image: dining_table
+        menu_name: "Washbasin",
+        menu_image: besin
     },
     {
         menu_name: "Siling lamp",
         menu_image: sl
     },
-    
     {
-        menu_name: "Washbasin",
-        menu_image: besin
+        menu_name: "Dining table",
+        menu_image: dining_table
     },
-    {
-        menu_name: "__",
-        menu_image: menu_9
-    }]
+    ]
 
 export const food_list = [
     {
@@ -465,27 +491,258 @@ export const food_list = [
 },
 {
     _id: "41",
-    name: "chair",
+    name: "Consol",
     image: food_41,
     price: 1050,
     description: "__",
-    category: " "
+    category: " consol"
 },
 {
     _id: "42",
-    name: "chair",
+    name: "Consol",
     image: food_42,
     price: 1050,
     description: "__",
-    category: " "
+    category: "consol "
 },
 {
     _id: "43",
-    name: "chair",
+    name: "Consol",
     image: food_43,
     price: 1050,
     description: "__",
-    category: " "
+    category: "consol "
+},
+{
+    _id: "44",
+    name: "Consol",
+    image: food_44,
+    price: 1050,
+    description: "__",
+    category: "consol "
+},
+{
+    _id: "45",
+    name: "Consol",
+    image: food_45,
+    price: 1050,
+    description: "__",
+    category: "consol "
+},
+{
+    _id: "46",
+    name: "Consol",
+    image: food_46,
+    price: 1050,
+    description: "__",
+    category: "consol "
+},
+{
+    _id: "47",
+    name: "Consol",
+    image: food_47,
+    price: 1050,
+    description: "__",
+    category: "consol "
+},
+{
+    _id: "48",
+    name: "Consol",
+    image: food_48,
+    price: 1050,
+    description: "__",
+    category: "consol "
+},
+{
+    _id: "49",
+    name: "Besin",
+    image: food_49,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "50",
+    name: "Besin",
+    image: food_50,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "51",
+    name: "Besin",
+    image: food_51,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "52",
+    name: "Besin",
+    image: food_52,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "53",
+    name: "Besin",
+    image: food_53,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "54",
+    name: "Besin",
+    image: food_54,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "55",
+    name: "Besin",
+    image: food_55,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "56",
+    name: "Besin",
+    image: food_56,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "57",
+    name: "siling_lamp_",
+    image: food_57,
+    price: 1050,
+    description: "__",
+    category: "besin "
+},
+{
+    _id: "58",
+    name: "Siling Lamp",
+    image: food_58,
+    price: 1050,
+    description: "__",
+    category: "siling lamp "
+},
+{
+    _id: "59",
+    name: "Siling Lamp",
+    image: food_59,
+    price: 1050,
+    description: "__",
+    category: "siling lamp "
+},
+{
+    _id: "60",
+    name: "Siling Lamp",
+    image: food_60,
+    price: 1050,
+    description: "__",
+    category: "siling lamp"
+},
+{
+    _id: "61",
+    name: "Siling Lamp",
+    image: food_61,
+    price: 1050,
+    description: "__",
+    category: "siling lamp "
+},
+{
+    _id: "62",
+    name: "Siling Lamp",
+    image: food_62,
+    price: 1050,
+    description: "__",
+    category: "siling lamp "
+},
+{
+    _id: "63",
+    name: "Siling Lamp",
+    image: food_63,
+    price: 1050,
+    description: "__",
+    category: "siling lamp "
+},
+{
+    _id: "64",
+    name: "Siling Lamp",
+    image: food_64,
+    price: 1050,
+    description: "__",
+    category: "siling lamp "
+},
+{
+    _id: "65",
+    name: "Dining Table",
+    image: food_65,
+    price: 1050,
+    description: "__",
+    category: "dining table "
+},
+{
+    _id: "66",
+    name: "Dining Table",
+    image: food_66,
+    price: 1050,
+    description: "__",
+    category: "dining table "
+},
+{
+    _id: "67",
+    name: "Dining Table",
+    image: food_67,
+    price: 1050,
+    description: "__",
+    category: "dining table "
+},
+{
+    _id: "68",
+    name: "Dining Table",
+    image: food_68,
+    price: 1050,
+    description: "__",
+    category: "dining table "
+},
+{
+    _id: "69",
+    name: "Dining Table",
+    image: food_69,
+    price: 1050,
+    description: "__",
+    category: "dining table "
+},
+{
+    _id: "70",
+    name: "Dining Table",
+    image: food_70,
+    price: 1050,
+    description: "__",
+    category: "dining table "
+},
+{
+    _id: "71",
+    name: "Dining Table",
+    image: food_71,
+    price: 1050,
+    description: "__",
+    category: "dining table "
+},
+{
+    _id: "72",
+    name: "Dining Table",
+    image: food_72,
+    price: 1050,
+    description: "__",
+    category: "dining table "
 }
-
 ];
