@@ -11,7 +11,7 @@ import dining_table from './dining_table.png'
 import sl from './sl.png'
 import besin from './besin.png'
 import menu_9 from './besin.png'
-
+//sofa img
 import food_1 from './sofa_1.png'
 import food_2 from './sofa_2.png'
 import food_3 from './sofa_3.png'
@@ -24,7 +24,7 @@ import food_9 from './sofa_9.png'
 import food_10 from './sofa_10.png'
 import food_11 from './sofa_11.png'
 import food_12 from './sofa_12.png'
-
+//table img
 import food_13 from './stable_.jpg'
 import food_14 from './stable1.png'
 import food_15 from './stable2.png'
@@ -37,14 +37,32 @@ import food_21 from './stable8.png'
 import food_22 from './stable9.png'
 import food_23 from './stable10.png'
 import food_24 from './stable11.png'
-import food_25 from './food_25.png'
-import food_26 from './food_26.png'
-import food_27 from './food_27.png'
-import food_28 from './food_28.png'
-import food_29 from './food_29.png'
-import food_30 from './food_30.png'
-import food_31 from './food_31.png'
-import food_32 from './food_32.png'
+//chair img
+import food_25 from './chair1.png'
+import food_26 from './chair2.png'
+import food_27 from './chair3.png'
+import food_28 from './chair4.png'
+import food_29 from './chair5.png'
+import food_30 from './chair6.png'
+import food_31 from './chair7.png'
+import food_32 from './chair8.png'
+//lamp img
+import food_33 from './lamp_2.png'
+import food_34 from './lamp_3.png'
+import food_35 from './lamp_4.png'
+import food_36 from './lamp_5.png'
+import food_37 from './lamp_6.png'
+import food_38 from './lamp_7.png'
+import food_39 from './lamp_8.png'
+import food_40 from './lamp_1.png'
+//consol
+import food_41 from './chair8.png'
+import food_42 from './chair8.png'
+import food_43 from './chair8.png'
+
+
+
+
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -169,15 +187,15 @@ export const food_list = [
         name: "Study Table",
         image: food_6,
         price: 840,
-        description: "Enjoy the fiery flavors of peri peri chicken wrapped in soft rolls, complemented by crunchy lettuce, sliced tomatoes, and a drizzle of tangy peri peri sauce.",
-        category: "Rolls"
+        description: "_",
+        category: "table"
     },
     {
         _id: "7",
         name: "kechan ",
         image: food_7,
         price: 1400,
-        description: "Satisfy your hunger with these hearty chicken rolls stuffed with tender shredded chicken, aromatic spices, fresh vegetables, and a creamy garlic mayo sauce.",
+        description: "_",
         category: "Rolls"
     },
     {
@@ -185,7 +203,7 @@ export const food_list = [
         name: "Veg Rolls",
         image: food_8,
         price: 1050,
-        description: "Delight in these veg rolls filled with a medley of colorful vegetables, seasoned with aromatic herbs and spices, and wrapped in a soft tortilla for a satisfying snack.",
+        description: "_",
         category: "Rolls"
     },
     {
@@ -193,7 +211,7 @@ export const food_list = [
         name: "Ripple Ice Cream",
         image: food_9,
         price: 980,
-        description: "Indulge your sweet tooth with creamy ripple ice cream, featuring luscious ribbons of caramel swirled through rich vanilla ice cream for a decadent treat.",
+        description: "_",
         category: "Desserts"
     },
     {
@@ -201,7 +219,7 @@ export const food_list = [
         name: "Fruit Ice Cream",
         image: food_10,
         price: 1540,
-        description: "Treat yourself to a refreshing fruit ice cream bursting with the flavors of ripe strawberries, juicy mangoes, and tangy pineapple, blended into creamy perfection.",
+        description: "_",
         category: "Desserts"
     },
     {
@@ -209,7 +227,7 @@ export const food_list = [
         name: "Jar Ice Cream",
         image: food_11,
         price: 700,
-        description: "Savor the nostalgia with jar ice cream, featuring layers of creamy chocolate and vanilla ice cream, crunchy cookie crumbles, and rich fudge sauce for a delightful dessert.",
+        description: "_",
         category: "Desserts"
     },
     {
@@ -217,7 +235,7 @@ export const food_list = [
         name: "Vanilla Ice Cream",
         image: food_12,
         price: 840,
-        description: "Indulge in classic vanilla ice cream, made with the finest Madagascar vanilla beans for a smooth and creamy treat that never goes out of style.",
+        description: "_",
         category: "Desserts"
     },
     {
@@ -225,7 +243,7 @@ export const food_list = [
         name: "Chicken Sandwich",
         image: food_13,
         price: 840,
-        description: "Sink your teeth into a delicious chicken sandwich featuring tender grilled chicken breast, crisp lettuce, ripe tomatoes, and creamy mayo, all nestled between soft slices of bread.",
+        description: "_",
         category: "Sandwich"
     },
     {
@@ -233,7 +251,7 @@ export const food_list = [
         name: "Vegan Sandwich",
         image: food_14,
         price: 1260,
-        description: "Enjoy a flavorful vegan sandwich filled with marinated tofu, crunchy veggies, avocado slices, and a creamy hummus spread, served on whole grain bread for a wholesome meal.",
+        description: "_",
         category: "Sandwich"
     },
     {
@@ -241,7 +259,7 @@ export const food_list = [
         name: "Grilled Sandwich",
         image: food_15,
         price: 1120,
-        description: "Savor the goodness of a grilled sandwich packed with melted cheese, thinly sliced ham, juicy tomatoes, and tangy mustard, grilled to perfection for a comforting snack.",
+        description: "_",
         category: "Sandwich"
     },
     {
@@ -249,7 +267,7 @@ export const food_list = [
         name: "Bread Sandwich",
         image: food_16,
         price: 1680,
-        description: "Indulge in a hearty bread sandwich layered with flavorful meats, crisp lettuce, juicy tomatoes, and creamy spreads, all sandwiched between slices of freshly baked bread.",
+        description: "_",
         category: "Sandwich"
     },
     {
@@ -257,7 +275,7 @@ export const food_list = [
         name: "Cup Cake",
         image: food_17,
         price: 980,
-        description: "Delight your taste buds with a scrumptious cupcake topped with fluffy frosting and colorful sprinkles, perfect for satisfying your sweet cravings anytime.",
+        description: "_",
         category: "Cake"
     },
     {
@@ -265,7 +283,7 @@ export const food_list = [
         name: "Vegan Cake",
         image: food_18,
         price: 840,
-        description: "Indulge guilt-free with a delectable vegan cake made with wholesome ingredients and topped with a luscious dairy-free frosting, offering a delightful treat for all.",
+        description: "_",
         category: "Cake"
     },
     {
@@ -273,7 +291,7 @@ export const food_list = [
         name: "Butterscotch Cake",
         image: food_19,
         price: 1400,
-        description: "Treat yourself to a decadent butterscotch cake featuring layers of moist sponge cake, creamy butterscotch frosting, and crunchy caramelized nuts for an irresistible dessert experience.",
+        description: "_",
         category: "Cake"
     },
     {
@@ -281,7 +299,7 @@ export const food_list = [
         name: "Sliced Cake",
         image: food_20,
         price: 1050,
-        description: "Enjoy a slice of heavenly cake with a variety of flavors to choose from, including rich chocolate, velvety red velvet, moist carrot, and more, perfect for any celebration.",
+        description: "_",
         category: "Cake"
     },
     {
@@ -289,7 +307,7 @@ export const food_list = [
         name: "Garlic Mushroom",
         image: food_21,
         price: 980,
-        description: "Savor the earthy flavors of garlic mushrooms sautéed to perfection, served with a drizzle of herb-infused olive oil and a sprinkle of Parmesan cheese for a delightful appetizer.",
+        description: "_",
         category: "Pure Veg"
     },
     {
@@ -297,7 +315,7 @@ export const food_list = [
         name: "Fried Cauliflower",
         image: food_22,
         price: 1540,
-        description: "Indulge in crispy fried cauliflower florets coated in a seasoned batter, served with a tangy dipping sauce for a satisfying snack that's perfect for sharing.",
+        description: "_",
         category: "Pure Veg"
     },
     {
@@ -305,7 +323,7 @@ export const food_list = [
         name: "Mix Veg Pulao",
         image: food_23,
         price: 700,
-        description: "Savor the aromatic flavors of mix veg pulao, featuring fragrant basmati rice cooked with a colorful assortment of vegetables, aromatic spices, and herbs for a comforting meal.",
+        description: "_",
         category: "Pure Veg"
     },
     {
@@ -313,7 +331,7 @@ export const food_list = [
         name: "Rice Zucchini",
         image: food_24,
         price: 840,
-        description: "Enjoy a flavorful rice zucchini dish featuring tender zucchini sautéed with aromatic spices, herbs, and cooked with fluffy basmati rice for a nutritious and satisfying meal.",
+        description: "_",
         category: "Pure Veg"
     },
     {
@@ -321,7 +339,7 @@ export const food_list = [
         name: "Cheese Pasta",
         image: food_25,
         price: 840,
-        description: "Indulge in creamy cheese pasta made with al dente pasta tossed in a rich and velvety cheese sauce, sprinkled with Parmesan cheese for an irresistible comfort food classic.",
+        description: "_",
         category: "Pasta"
     },
     {
@@ -329,7 +347,7 @@ export const food_list = [
         name: "Tomato Pasta",
         image: food_26,
         price: 1260,
-        description: "Savor the freshness of tomato pasta featuring tangy tomato sauce tossed with tender pasta, garlic, onions, and aromatic herbs for a simple yet satisfying Italian dish.",
+        description: "_",
         category: "Pasta"
     },
     {
@@ -337,7 +355,7 @@ export const food_list = [
         name: "Creamy Pasta",
         image: food_27,
         price: 1120,
-        description: "Indulge in creamy pasta made with smooth Alfredo sauce, tender pasta, grilled chicken, and sautéed vegetables, all combined for a luxurious and satisfying meal.",
+        description: "_",
         category: "Pasta"
     },
     {
@@ -345,7 +363,7 @@ export const food_list = [
         name: "Chicken Pasta",
         image: food_28,
         price: 1680,
-        description: "Enjoy hearty chicken pasta featuring succulent pieces of grilled chicken breast, tossed with al dente pasta, sun-dried tomatoes, spinach, and a creamy garlic sauce for a flavorful meal.",
+        description: "_",
         category: "Pasta"
     },
     {
@@ -353,7 +371,7 @@ export const food_list = [
         name: "Butter Noodles",
         image: food_29,
         price: 980,
-        description: "Indulge in buttery noodles tossed in a savory sauce made with butter, garlic, and herbs, creating a simple yet delicious dish that's perfect for any occasion.",
+        description: "_",
         category: "Noodles"
     },
     {
@@ -361,7 +379,7 @@ export const food_list = [
         name: "Veg Noodles",
         image: food_30,
         price: 840,
-        description: "Delight in veg noodles made with stir-fried vegetables, tender noodles, and a flavorful sauce, creating a quick and satisfying meal that's bursting with vibrant flavors.",
+        description: "_",
         category: "Noodles"
     },
     {
@@ -369,16 +387,105 @@ export const food_list = [
         name: "Somen Noodles",
         image: food_31,
         price: 1400,
-        description: "Enjoy somen noodles, a light and refreshing Japanese dish featuring thin wheat noodles served cold with a dipping sauce, garnished with fresh toppings for a delightful meal.",
+        description: "_",
         category: "Noodles"
     },
     {
         _id: "32",
-        name: "Cooked Noodles",
+        name: "chair",
         image: food_32,
         price: 1050,
-        description: "Savor the flavors of cooked noodles tossed in a savory sauce with your choice of protein and vegetables, creating a customizable and satisfying noodle dish for any palate.",
-        category: "Noodles"
-    }
-];
+        description: "__",
+        category: "chair"
+    },
 
+{
+    _id: "33",
+    name: "chair",
+    image: food_33,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "34",
+    name: "chair",
+    image: food_34,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "35",
+    name: "chair",
+    image: food_35,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "36",
+    name: "chair",
+    image: food_36,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "37",
+    name: "chair",
+    image: food_37,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "38",
+    name: "chair",
+    image: food_38,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "39",
+    name: "chair",
+    image: food_39,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "40",
+    name: "chair",
+    image: food_40,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "41",
+    name: "chair",
+    image: food_41,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "42",
+    name: "chair",
+    image: food_42,
+    price: 1050,
+    description: "__",
+    category: " "
+},
+{
+    _id: "43",
+    name: "chair",
+    image: food_43,
+    price: 1050,
+    description: "__",
+    category: " "
+}
+
+];
