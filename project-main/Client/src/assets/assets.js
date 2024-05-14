@@ -180,215 +180,215 @@ export const food_list = [
         image: food_5,
         price: 7000,
         description: "__",
-        category: "Rolls"
+        category: "sofa"
     },
     {
         _id: "6",
-        name: "Study Table",
+        name: " _",
         image: food_6,
+        price: 840,
+        description: "_",
+        category: "sofa"
+    },
+    {
+        _id: "7",
+        name: " __",
+        image: food_7,
+        price: 1400,
+        description: "_",
+        category: "sofa"
+    },
+    {
+        _id: "8",
+        name: "__",
+        image: food_8,
+        price: 1050,
+        description: "_",
+        category: "sofa"
+    },
+    {
+        _id: "9",
+        name: "__",
+        image: food_9,
+        price: 980,
+        description: "_",
+        category: "sofa"
+    },
+    {
+        _id: "10",
+        name: "sofa",
+        image: food_10,
+        price: 1540,
+        description: "_",
+        category: "sofa"
+    },
+    {
+        _id: "11",
+        name: " sofa",
+        image: food_11,
+        price: 700,
+        description: "_",
+        category: "sofa"
+    },
+    {
+        _id: "12",
+        name: "sofa",
+        image: food_12,
+        price: 840,
+        description: "_",
+        category: "sofa"
+    },
+    {
+        _id: "13",
+        name: "Table",
+        image: food_13,
         price: 840,
         description: "_",
         category: "table"
     },
     {
-        _id: "7",
-        name: "kechan ",
-        image: food_7,
-        price: 1400,
-        description: "_",
-        category: "Rolls"
-    },
-    {
-        _id: "8",
-        name: "Veg Rolls",
-        image: food_8,
-        price: 1050,
-        description: "_",
-        category: "Rolls"
-    },
-    {
-        _id: "9",
-        name: "Ripple Ice Cream",
-        image: food_9,
-        price: 980,
-        description: "_",
-        category: "Desserts"
-    },
-    {
-        _id: "10",
-        name: "Fruit Ice Cream",
-        image: food_10,
-        price: 1540,
-        description: "_",
-        category: "Desserts"
-    },
-    {
-        _id: "11",
-        name: "Jar Ice Cream",
-        image: food_11,
-        price: 700,
-        description: "_",
-        category: "Desserts"
-    },
-    {
-        _id: "12",
-        name: "Vanilla Ice Cream",
-        image: food_12,
-        price: 840,
-        description: "_",
-        category: "Desserts"
-    },
-    {
-        _id: "13",
-        name: "Chicken Sandwich",
-        image: food_13,
-        price: 840,
-        description: "_",
-        category: "Sandwich"
-    },
-    {
         _id: "14",
-        name: "Vegan Sandwich",
+        name: "Table",
         image: food_14,
         price: 1260,
         description: "_",
-        category: "Sandwich"
+        category: "table"
     },
     {
         _id: "15",
-        name: "Grilled Sandwich",
+        name: "Table",
         image: food_15,
         price: 1120,
         description: "_",
-        category: "Sandwich"
+        category: "table"
     },
     {
         _id: "16",
-        name: "Bread Sandwich",
+        name: "Table",
         image: food_16,
         price: 1680,
         description: "_",
-        category: "Sandwich"
+        category: "table"
     },
     {
         _id: "17",
-        name: "Cup Cake",
+        name: "Table",
         image: food_17,
         price: 980,
         description: "_",
-        category: "Cake"
+        category: "table"
     },
     {
         _id: "18",
-        name: "Vegan Cake",
+        name: "Table",
         image: food_18,
         price: 840,
         description: "_",
-        category: "Cake"
+        category: "table"
     },
     {
         _id: "19",
-        name: "Butterscotch Cake",
+        name: "Table",
         image: food_19,
         price: 1400,
         description: "_",
-        category: "Cake"
+        category: "table"
     },
     {
         _id: "20",
-        name: "Sliced Cake",
+        name: "Table",
         image: food_20,
         price: 1050,
         description: "_",
-        category: "Cake"
+        category: "table"
     },
     {
         _id: "21",
-        name: "Garlic Mushroom",
+        name: "Table",
         image: food_21,
         price: 980,
         description: "_",
-        category: "Pure Veg"
+        category: "table"
     },
     {
         _id: "22",
-        name: "Fried Cauliflower",
+        name: "Table",
         image: food_22,
         price: 1540,
         description: "_",
-        category: "Pure Veg"
+        category: "table"
     },
     {
         _id: "23",
-        name: "Mix Veg Pulao",
+        name: "Table",
         image: food_23,
         price: 700,
         description: "_",
-        category: "Pure Veg"
+        category: "table"
     },
     {
         _id: "24",
-        name: "Rice Zucchini",
+        name: "Table",
         image: food_24,
         price: 840,
         description: "_",
-        category: "Pure Veg"
+        category: "table"
     },
     {
         _id: "25",
-        name: "Cheese Pasta",
+        name: "Chair",
         image: food_25,
         price: 840,
         description: "_",
-        category: "Pasta"
+        category: "chair"
     },
     {
         _id: "26",
-        name: "Tomato Pasta",
+        name: "Cahir",
         image: food_26,
         price: 1260,
         description: "_",
-        category: "Pasta"
+        category: "chair"
     },
     {
         _id: "27",
-        name: "Creamy Pasta",
+        name: "Chair",
         image: food_27,
         price: 1120,
         description: "_",
-        category: "Pasta"
+        category: "chair"
     },
     {
         _id: "28",
-        name: "Chicken Pasta",
+        name: "Chair",
         image: food_28,
         price: 1680,
         description: "_",
-        category: "Pasta"
+        category: "chair"
     },
     {
         _id: "29",
-        name: "Butter Noodles",
+        name: "Chair",
         image: food_29,
         price: 980,
         description: "_",
-        category: "Noodles"
+        category: "chair"
     },
     {
         _id: "30",
-        name: "Veg Noodles",
+        name: "Chair",
         image: food_30,
         price: 840,
         description: "_",
-        category: "Noodles"
+        category: "chair"
     },
     {
         _id: "31",
-        name: "Somen Noodles",
+        name: "Chair",
         image: food_31,
         price: 1400,
         description: "_",
-        category: "Noodles"
+        category: "chair"
     },
     {
         _id: "32",
@@ -401,67 +401,67 @@ export const food_list = [
 
 {
     _id: "33",
-    name: "chair",
+    name: "Lamp",
     image: food_33,
     price: 1050,
     description: "__",
-    category: " "
+    category: " lamp"
 },
 {
     _id: "34",
-    name: "chair",
+    name: "Lamp",
     image: food_34,
     price: 1050,
     description: "__",
-    category: " "
+    category: "lmap "
 },
 {
     _id: "35",
-    name: "chair",
+    name: "Lamp",
     image: food_35,
     price: 1050,
     description: "__",
-    category: " "
+    category: " lamp"
 },
 {
     _id: "36",
-    name: "chair",
+    name: "Lamp",
     image: food_36,
     price: 1050,
     description: "__",
-    category: " "
+    category: " lamp"
 },
 {
     _id: "37",
-    name: "chair",
+    name: "Lamp",
     image: food_37,
     price: 1050,
     description: "__",
-    category: " "
+    category: " lamp"
 },
 {
     _id: "38",
-    name: "chair",
+    name: "Lamp",
     image: food_38,
     price: 1050,
     description: "__",
-    category: " "
+    category: " lamp"
 },
 {
     _id: "39",
-    name: "chair",
+    name: "Lamp",
     image: food_39,
     price: 1050,
     description: "__",
-    category: " "
+    category: "lamp "
 },
 {
     _id: "40",
-    name: "chair",
+    name: "Lamp",
     image: food_40,
     price: 1050,
     description: "__",
-    category: " "
+    category: " lamp"
 },
 {
     _id: "41",
