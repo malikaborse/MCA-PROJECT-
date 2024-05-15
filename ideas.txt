@@ -15,3 +15,349 @@ to Start the Backend -
 
 2. If you are already in the Vs code and want to run 
     1) npm run dev
+
+
+
+
+
+
+
+// About page work
+
+
+
+    import React from 'react';
+
+
+const About = () => {
+  return (
+   
+    <div><h1>informaiton</h1></div>
+    
+    
+
+    
+  );
+}
+
+
+
+var MyClass = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <title>Greenskape</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" />
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="css/ionicons.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+        <link rel="stylesheet" href="css/jquery.timepicker.css" />
+        <link rel="stylesheet" href="css/flaticon.css" />
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+          <div className="container">
+            <a className="navbar-brand" href="index.html">Greenskape</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="oi oi-menu" /> Menu
+            </button>
+            <div className="collapse navbar-collapse" id="ftco-nav">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item"><a href="index.html" className="nav-link">Home</a></li>
+                <li className="nav-item active"><a href="about.html" className="nav-link">About</a></li>
+                <li className="nav-item"><a href="project.html" className="nav-link">Project</a></li>
+                <li className="nav-item"><a href="services.html" className="nav-link">Services</a></li>
+                <li className="nav-item"><a href="blog.html" className="nav-link">Blog</a></li>
+                <li className="nav-item"><a href="contact.html" className="nav-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        {/* END nav */}
+        <section className="home-slider js-fullheight owl-carousel">
+          <div className="slider-item js-fullheight" style={{backgroundImage: 'url(images/bg_1.jpg)'}}>
+            <div className="overlay" />
+            <div className="container">
+              <div className="row slider-text justify-content-center align-items-center">
+                <div className="col-md-7 col-sm-12 text-center ftco-animate">
+                  <h1 className="mb-3 mt-5 bread">About</h1>
+                  <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="ftc-no-pb">
+          <div className="container">
+            <div className="row no-gutters">
+              <div className="col-md-5 p-md-5 img img-2" style={{backgroundImage: 'url(images/about.jpg)'}}>
+              </div>
+              <div className="col-md-7 wrap-about pb-md-5 pt-5 ftco-animate">
+                <div className="heading-section mb-5 pl-md-5 heading-section-with-line">
+                  <div className="pl-md-5 ml-md-5">
+                    <span className="subheading">About</span>
+                    <h2 className="mb-4">We are the best interior &amp; Architect Consultant in Italy</h2>
+                  </div>
+                </div>
+                <div className="pl-md-5 ml-md-5 mb-5">
+                  <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+                  <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                  <p><a href="#" className="btn-custom">Learn More <span className="ion-ios-arrow-forward" /></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="ftco-section ftco-counter img" id="section-counter" style={{backgroundImage: 'url(images/bg_3.jpg)'}} data-stellar-background-ratio="0.5">
+          <div className="container">
+            <div className="row d-md-flex align-items-center justify-content-center">
+              <div className="col-lg-4">
+                <div className="heading-section pl-md-5 heading-section-white">
+                  <div className="pl-md-5 ml-md-5 ftco-animate">
+                    <span className="subheading">Some</span>
+                    <h2 className="mb-4">Interesting Facts</h2>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-8">
+                <div className="row d-md-flex align-items-center">
+                  <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                    <div className="block-18 text-center">
+                      <div className="text">
+                        <strong className="number" data-number={9}>0</strong>
+                        <span>Years of Experienced</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                    <div className="block-18 text-center">
+                      <div className="text">
+                        <strong className="number" data-number={40}>0</strong>
+                        <span>Happy Clients</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                    <div className="block-18 text-center">
+                      <div className="text">
+                        <strong className="number" data-number={50}>0</strong>
+                        <span>Finished Projects</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                    <div className="block-18 text-center">
+                      <div className="text">
+                        <strong className="number" data-number={200}>0</strong>
+                        <span>Working Days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="ftco-section testimony-section">
+          <div className="container">
+            <div className="row justify-content-center mb-5 pb-3">
+              <div className="col-md-7 heading-section ftco-animate">
+                <h2 className="mb-4">Our satisfied customer says</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+              </div>
+            </div>
+            <div className="row ftco-animate">
+              <div className="col-md-12">
+                <div className="carousel-testimony owl-carousel">
+                  <div className="item">
+                    <div className="testimony-wrap p-4 pb-5">
+                      <div className="user-img mb-5" style={{backgroundImage: 'url(images/person_1.jpg)'}}>
+                        <span className="quote d-flex align-items-center justify-content-center">
+                          <i className="icon-quote-left" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p className="name">Garreth Smith</p>
+                        <span className="position">Marketing Manager</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="testimony-wrap p-4 pb-5">
+                      <div className="user-img mb-5" style={{backgroundImage: 'url(images/person_2.jpg)'}}>
+                        <span className="quote d-flex align-items-center justify-content-center">
+                          <i className="icon-quote-left" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p className="name">Garreth Smith</p>
+                        <span className="position">Interface Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="testimony-wrap p-4 pb-5">
+                      <div className="user-img mb-5" style={{backgroundImage: 'url(images/person_3.jpg)'}}>
+                        <span className="quote d-flex align-items-center justify-content-center">
+                          <i className="icon-quote-left" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p className="name">Garreth Smith</p>
+                        <span className="position">UI Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="testimony-wrap p-4 pb-5">
+                      <div className="user-img mb-5" style={{backgroundImage: 'url(images/person_1.jpg)'}}>
+                        <span className="quote d-flex align-items-center justify-content-center">
+                          <i className="icon-quote-left" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p className="name">Garreth Smith</p>
+                        <span className="position">Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="testimony-wrap p-4 pb-5">
+                      <div className="user-img mb-5" style={{backgroundImage: 'url(images/person_1.jpg)'}}>
+                        <span className="quote d-flex align-items-center justify-content-center">
+                          <i className="icon-quote-left" />
+                        </span>
+                      </div>
+                      <div className="text">
+                        <p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p className="name">Garreth Smith</p>
+                        <span className="position">System Analyst</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="ftco-section">
+          <div className="container">
+            <div className="row justify-content-center mb-5 pb-3">
+              <div className="col-md-7 heading-section ftco-animate">
+                <h2 className="mb-4">Our Architect Team</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+              </div>
+            </div>	
+            <div className="row">
+              <div className="col-md-6 col-lg-3 ftco-animate">
+                <div className="staff">
+                  <div className="img" style={{backgroundImage: 'url(images/staff-1.jpg)'}} />
+                  <div className="text pt-4">
+                    <h3>Shrutika Pawar</h3>
+                    <span className="position mb-2">Achitect</span>
+                    <p>- BDes( bachelor in DESIGN) NDMVPS&nbsp;college.</p>
+                    <ul className="ftco-social d-flex">
+                      <li className="ftco-animate"><a href="#"><span className="icon-twitter" /></a></li>
+                      <li className="ftco-animate"><a href="#"><span className="icon-facebook" /></a></li>
+                      <li className="ftco-animate"><a href="#"><span className="icon-google-plus" /></a></li>
+                      <li className="ftco-animate"><a href="#"><span className="icon-instagram" /></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-3 ftco-animate">
+                <div className="staff">
+                  <div className="img" style={{backgroundImage: 'url(images/staff-2.jpg)'}} />
+                  <div className="text pt-4">
+                    <h3>Sanket Pawar</h3>
+                    <span className="position mb-2">Achitect</span>
+                    <p>Btech ( symbiosis college&nbsp;Pune).</p>
+                    <ul className="ftco-social d-flex">
+                      <li className="ftco-animate"><a href="#"><span className="icon-twitter" /></a></li>
+                      <li className="ftco-animate"><a href="#"><span className="icon-facebook" /></a></li>
+                      <li className="ftco-animate"><a href="#"><span className="icon-google-plus" /></a></li>
+                      <li className="ftco-animate"><a href="#"><span className="icon-instagram" /></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <footer className="ftco-footer ftco-bg-dark ftco-section">
+                <div className="container">
+                  <div className="row mb-5">
+                    <div className="col-md">
+                      <div className="ftco-footer-widget mb-4">
+                        <h2 className="ftco-heading-2">Greenskape</h2>
+                        <p>________________________________________________
+                          Simple but signifecunt
+                          _________________________________________________</p>
+                        <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                          <li className="ftco-animate"><a href="#"><span className="icon-twitter" /></a></li>
+                          <li className="ftco-animate"><a href="#"><span className="icon-facebook" /></a></li>
+                          <li className="ftco-animate"><a href="#"><span className="icon-instagram" /></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-md">
+                      <div className="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 className="ftco-heading-2">Links</h2>
+                        <ul className="list-unstyled">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">Projects</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-md">
+                      <div className="ftco-footer-widget mb-4">
+                        <h2 className="ftco-heading-2">Services</h2>
+                        <ul className="list-unstyled">
+                          <li><a href="#">Architectural Design</a></li>
+                          <li><a href="#">Interior Design</a></li>
+                          <li><a href="#">Exterior Design</a></li>
+                          <li><a href="#">Lighting Design</a></li>
+                          <li><a href="#">AutoCAD Service</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-md">
+                      <div className="ftco-footer-widget mb-4">
+                        <h2 className="ftco-heading-2">Have a Questions?</h2>
+                        <div className="block-23 mb-3">
+                          <ul>
+                            <li><span className="icon icon-map-marker" /><span className="text"> - 3rd floor,Gajanan annex, near Magnum hospital,patil&nbsp;lane,nashik</span></li>
+                            <li><a href="#"><span className="icon icon-phone" /><span className="text">+91-9325030351</span></a></li>
+                            <li><a href="#"><span className="icon icon-envelope" /><span className="text">kamolica@30gmail.com</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12 text-center">
+                      <p>{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
+                        Copyright © All rights reserved | This project <i className="icon-heart" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Komalika Borse</a>
+                        {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              {/* loader */}
+              <div id="ftco-loader" className="show fullscreen"><svg className="circular" width="48px" height="48px"><circle className="path-bg" cx={24} cy={24} r={22} fill="none" strokeWidth={4} stroke="#eeeeee" /><circle className="path" cx={24} cy={24} r={22} fill="none" strokeWidth={4} strokeMiterlimit={10} stroke="#F96D00" /></svg></div>
+            </div></div></section></div>
+    );
+  }
+});
